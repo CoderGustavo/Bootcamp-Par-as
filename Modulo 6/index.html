@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modulo 6</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Mate+SC&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div>
+        <h1 class="text-danger" id="titulo">Titulo da Página</h1>
+    </div>
+    <div>
+        <h2 class="subtitulo">Sub-Titulo da Página</h2>
+    </div>
+    <div class="container">
+        <p class="paragrafo">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fugit quia maxime sed dicta beatae quas, quo iste aut accusamus nostrum corporis. Dolor magni dicta inventore quam enim officiis, tempora saepe? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium voluptate dicta molestiae saepe sint architecto magnam. Iure quidem nostrum quibusdam eaque, repellendus error natus modi atque consequuntur in! Suscipit, quo?</p>
+    </div>
+    <div class="container">
+        <hr>
+        <ul class="col-4">
+            <li>pão</li>
+            <li>açucar</li>
+            <li>
+                arroz
+                <ul>
+                    <li>molhado</li>
+                    <li>seco</li>
+                    <li>laranja</li>
+                </ul>
+            </li>
+            <li>aaaaaaa</li>
+        </ul>
+        <ol start="5" type="I" class="col-4">
+            <li>pão</li>
+            <li>açucar</li>
+            <li>arroz</li>
+            <li>aaaaaaa</li>
+        </ol>
+        <ol type="A">
+            <li>pão</li>
+            <li>açucar</li>
+            <li>arroz</li>
+            <li>aaaaaaa</li>
+        </ol>
+    </div>
+    <div class="clear"></div>
+    <hr>
+    <div class="container">
+        <table class="col-4">
+            <thead>
+                <tr>
+                    <th>Id</th>
+                    <th>Nome</th>
+                    <th>Telefone</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>a</td>
+                    <td colspan="2">b</td>
+                </tr>
+                <tr>
+                    <td>a</td>
+                    <td>b</td>
+                    <td>c</td>
+                </tr>
+                <tr>
+                    <td>a</td>
+                    <td>b</td>
+                    <td>c</td>
+                </tr>
+                <tr>
+                    <td>a</td>
+                    <td>b</td>
+                    <td>c</td>
+                </tr>
+                <tr>
+                    <td>a</td>
+                    <td>b</td>
+                    <td>c</td>
+                </tr>
+            </tbody>
+        </table>
+        <div class="col-4">
+            <form action="paginaderecebimento.php" method="GET/POST">
+                <fieldset>
+                    <h2 class="subtitulo">Área de cadastro</h2>
+                    <div>
+                        <label for="name">
+                            <div>
+                                name:
+                            </div>
+                            <input type="text" name="name" id="name" placeholder="Type your name here">
+                        </label>
+                    </div>
+                    <div>
+                        <label for="email">
+                            <div>
+                                email:
+                            </div>
+                            <input type="email" name="email" id="email" placeholder="Type your email here">
+                        </label>
+                    </div>
+                    <div>
+                        <label for="password">
+                            <div>
+                                password:
+                            </div>
+                            <input type="password" name="password" id="password" placeholder="Type your password here">
+                        </label>
+                    </div>
+                    <div>
+                        <label for="obs">
+                            <div>
+                                Observação:
+                            </div>
+                            <textarea name="obs" id="obs" cols="30" rows="10"></textarea>
+                        </label>
+                    </div>
+                    <div>
+                        <label for="termos">
+                            <input type="checkbox" name="termos" id="termos">
+                            Li e aceito os <a href="#" target="_blank">termos de uso</a>
+                        </label>
+                    </div>
+                    <div>
+                        <button type="submit">Cadastrar</button>
+                    </div>
+                </fieldset>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
