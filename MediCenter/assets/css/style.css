@@ -29,18 +29,23 @@ header .menu{
     color: #000;
     transition: .3s;
 }
-.menu a:hover{
+.menu a:nth-child(1){
+    display: none;
+}
+.menu a:hover, .menu a.active{
     background-color: #34aeff;
     color: #fff;
 }
 #banner{
     background-image: url(../img/banner.jpeg);
+    background-position: top;
+    background-clip: cover;
+    background-size: 120%;
     background-repeat: no-repeat;
-    background-size: 119%;
     width: 100%;
-    height: 100vh;
     display: flex;
     flex-wrap: wrap;
+    height: 700px;
 }
 
 #banner .title{
@@ -114,6 +119,7 @@ header .menu{
     width: 69%;
     justify-content: center;
     align-items: flex-start;
+    flex-wrap: wrap;
     margin: 0 auto;
 }
 #main h2{
@@ -124,15 +130,17 @@ header .menu{
     flex: 2;
 }
 
-#news> div{
+#news > div{
     display: flex;
     justify-content: center;
     align-items: flex-start;
+    flex-wrap: wrap;
 }
 #news .news{
     padding: 20px;
     margin: 20px;
     flex: 1;
+    width: 305px;
 }
 .news .info{
     width: 50%;
@@ -165,12 +173,13 @@ header .menu{
     display: flex;
     justify-content: center;
     align-items: flex-start;
+    flex-wrap: wrap;
     margin-bottom: 1.3rem;
 }
 #right > .departments > div > div{
     margin-right: 20px;
-    width: 50%;
-    height: 150px;
+    width: 130px;
+    height: 130px;
     background-color: #4686ff;
 }
 footer{
@@ -182,6 +191,7 @@ footer .areas{
     display: flex;
     justify-content: center;
     align-items: flex-end;
+    flex-wrap: wrap;
 }
 footer > .areas > div{
     width: 23%;
@@ -193,4 +203,115 @@ footer > .areas > div{
     text-align: center;
     width: 100%;
     padding: 10px;
+}
+
+.menuMobile{
+    display: none;
+}
+
+@media (max-width:1320px){
+    #banner .title{
+        width: 80%;
+        padding: 10vh 0 0 15%;
+    }
+    #banner{
+        height: 800px;
+    }
+    #main{
+        width: 90%;
+    }
+    .card div{
+        width: 100%;
+    }
+    #news .news{
+        width: 200px;
+    }
+    footer > .areas > div{
+        width: 33%;
+    }
+
+}
+
+@media (max-width:1015px){
+    #banner{
+        height: 600px;
+    }
+    #main{
+        width: 100%;
+    }
+    #right > .departments > div > div{
+        width: 95px;
+        height: 95px;
+        margin-right: 10px;
+    }
+    footer > .areas > div{
+        width: 100%;
+    }
+    footer ul{
+        padding-left: 20px;
+    }
+}
+
+@media (max-width:800px){
+    .menuMobile{
+        display: block;
+        font-size: 25pt;
+    }
+    .menu a:nth-child(1){
+        display: flex;
+    }
+    .menuMobile > a{
+        color: #000;
+        transition: .5s;
+    }
+    .menuMobile > a:hover{
+        color: #4686ff;
+    }
+    header .menu{
+        flex-direction: column;
+        background-color: #eee;
+        width: 100%;
+        position: fixed;
+        bottom: -100vh;
+        height: 100vh;
+        transition: 1s;
+    }
+    .menu > a{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    #banner .title{
+        width: 100% !important;
+        padding: 5vh 2% 5vh 2% !important;
+    }
+    #banner{
+        height: 100%;
+    }
+    .title h1{
+        font-size: 30pt;
+        font-weight: bold;
+    }
+    .card{
+        flex-wrap: wrap;
+    }
+    #right > .departments > div > div{
+        width: 100%;
+        height: 80px;
+    }
+
+}
+
+@media(max-width:500px){
+    #banner{
+        background-size: 260%;
+        height: 100%;
+    }
+    .news{
+        width: 300px !important;
+    }
+    #right > .departments > div > div{
+        width: 70%;
+        height: 80px;
+    }
 }

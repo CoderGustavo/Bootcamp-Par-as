@@ -1,0 +1,54 @@
+#busca{
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 20px;
+}
+#busca #btn-search{
+    z-index: 9999;
+    left: 40%;
+    font-weight: bold;
+    color: rgb(77, 109, 255);
+    font-size: 12pt;
+}
+#busca input{
+    position: absolute;
+    width: 35%;
+    margin-left: 20px;
+}
+#categorias, #resultados{
+    padding-left: 8%;
+    width: 43%;
+}
+#categorias ul{
+    display: flex;
+    list-style: none;
+    text-align: center;
+}
+#categorias ul li{
+    flex: 1;
+    margin-right: 5px;
+    line-height: 25pt;
+}
+.active{
+    border-bottom: 4px solid rgb(77, 109, 255);
+}
+#categorias ul li a{
+    text-decoration: none;
+    color: #333;
+}
+.nav{
+    border-bottom: 1px solid #ccc;
+}
+.left{
+    padding-left: 8%;
+}
+.post{
+    margin-bottom: 5%;
+}
+.post h3{
+    color: rgb(23, 47, 151);
+    padding: 1.5% 0;
+}
+.post span, .post p{
+    font-size: 10pt;
+}

@@ -38,16 +38,8 @@
     background-color: blueviolet;
     margin: 10px;
     padding: 15px;
-    width: 100px;
+    flex: 1;
     height: 100px;
-}
-
-.dobro{
-    justify-content: flex-end !important;
-    align-items: flex-start !important;
-    align-self: flex-end;
-    background-color: lawngreen !important;
-    order: -1;
 }
 
 

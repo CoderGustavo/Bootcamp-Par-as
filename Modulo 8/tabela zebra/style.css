@@ -1,0 +1,28 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+table{
+    border: 2px solid black;
+}
+
+table thead{
+    background-color: #aaa;
+}
+
+table tr td{
+    line-height: 20pt;
+    padding: 20px;
+}
+table tbody tr:nth-child(2n+1){
+    background-color: blueviolet;
+}

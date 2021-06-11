@@ -6,6 +6,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Medicenter</title>
     <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.2.0/css/all.css">
+    <script>
+        function abrirmenu(){
+            document.querySelector('.menu').style.bottom = '0';
+        }
+        function fecharmenu(){
+            document.querySelector('.menu').style.bottom = '-100vh';
+        }
+    </script>
 </head>
 <body>
     <header>
@@ -14,8 +23,16 @@
                 <img src="assets/img/logo.jpeg" alt="Medicenter" title="Medicenter">
             </a>
         </div>
+        <div class="menuMobile">
+            <a href="#" onclick="abrirmenu()">
+                <i class="far fa-align-justify"></i>
+            </a>
+        </div>
         <div class="menu">
-            <a href="">
+            <a href="#" style="font-size: 30pt; margin-bottom: 5px;" onclick="fecharmenu()">
+                <i class="far fa-times"></i>
+            </a>
+            <a href="" class="active">
                 <div>
                     Home
                 </div>
@@ -128,48 +145,6 @@
                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quisquam neque quos velit optio unde dolorum, fuga ducimus eaque officiis et architecto facere, corrupti sapiente quidem nemo iusto modi sequi at.</p>
                         </div>
                     </div>
-                </div>
-                <div>
-                    <div class="news">
-                        <div class="info">
-                            <div class="data">
-                                20/05/2021
-                            </div>
-                            <div class="pos">
-                                2
-                            </div>
-                        </div>
-                        <div class="imagem">
-                            <img src="assets/img/img.jpeg" alt="imagem da noticia" width="100%">
-                        </div>
-                        <div class="titulo">
-                            <h2>Titulo da Noticia</h2>
-                        </div>
-                        <div class="texto">
-                           <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quisquam neque quos velit optio unde dolorum, fuga ducimus eaque officiis et architecto facere, corrupti sapiente quidem nemo iusto modi sequi at.</p>
-                        </div>
-                    </div>
-                    <div class="news">
-                        <div class="info">
-                            <div class="data">
-                                20/05/2021
-                            </div>
-                            <div class="pos">
-                                2
-                            </div>
-                        </div>
-                        <div class="imagem">
-                            <img src="assets/img/img.jpeg" alt="imagem da noticia" width="100%">
-                        </div>
-                        <div class="titulo">
-                            <h2>Titulo da Noticia</h2>
-                        </div>
-                        <div class="texto">
-                           <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quisquam neque quos velit optio unde dolorum, fuga ducimus eaque officiis et architecto facere, corrupti sapiente quidem nemo iusto modi sequi at.</p>
-                        </div>
-                    </div>
-                </div>
-                <div>
                     <div class="news">
                         <div class="info">
                             <div class="data">
