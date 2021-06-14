@@ -1,0 +1,40 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    background-color: blueviolet;
+    height: 100vh;
+    display: grid;
+    /* fr = fração */
+    /* grid-template-columns: repeat(4, auto); */
+    /* grid-template-columns: 200px 500px repeat(2, auto); */
+    /* grid-template-columns: repeat(2, 100px 200px); */
+    /* grid-template-columns: 1fr 2fr 1fr 4fr; */
+    /* grid-template-columns: repeat(auto-fill, 400px); auto responsivo */
+    grid-template-columns: repeat(auto-fill, minmax(100px, 200px)); /* auto responsivo com tamanho minimo e maximo horizontal */
+    grid-auto-rows: minmax(50px, 100px); /*minimo e maximo vertical*/
+    gap: 10px 20px; /*espaçamento*/
+    justify-content: center;
+    align-content: center;
+}
+
+.item{
+    background-color: red;
+    padding: 20px;
+    border-radius: 20px;
+    color: #fff;
+    font-size: 18pt;
+    font-family: Helvetica;
+}
+.item:nth-of-type(2){
+    /* grid-column-start: 2;
+    grid-column-end: 4;
+    grid-row-start: 1;
+    grid-row-end: 3; */
+    /* utilizando o span podemos dizer quantos vai aumentar*/
+    grid-column: 2 / 4;
+    grid-row: 1 / span 2;
+}
